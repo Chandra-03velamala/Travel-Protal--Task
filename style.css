@@ -15,7 +15,7 @@ body {
   background:
     linear-gradient(rgba(0,0,0,0.4),
     rgba(0,0,0,0.4)),
-    url("https://as1.ftcdn.net/v2/jpg/02/93/60/68/1000_F_293606833_0Y5CsYzFjBuy1HpocC6kPsYcqvnYvhHl.jpg");
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
 
   background-size: cover;
   background-position: center;
@@ -92,6 +92,30 @@ input {
 
 input::placeholder {
   color: #eee;
+}
+/* Blink Effect While Typing */
+input:focus {
+
+  border: 1px solid #00e1ff;
+
+  animation: glow 1s infinite alternate;
+
+  background: rgba(255,255,255,0.25);
+}
+
+@keyframes glow {
+
+  from {
+    box-shadow:
+      0 0 5px #00e1ff,
+      0 0 10px #00e1ff;
+  }
+
+  to {
+    box-shadow:
+      0 0 20px #00e1ff,
+      0 0 40px #00e1ff;
+  }
 }
 
 button {
